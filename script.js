@@ -17,3 +17,13 @@ var movies = [
         hasWatched: false
     }
 ];  
+
+for(var i = 0; i < movies.length; i++){
+    var result = "I have ";
+    if(movies[i].hasWatched == true){
+        result += "have watched \"" + movies[i].title;
+    } else {
+        result += "have not watched \"" + movies[i].title;
+    }
+} 
+    
