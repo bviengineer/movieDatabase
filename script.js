@@ -18,14 +18,13 @@ var movies = [
     }
 ];  
 
-//Following to be refactored; not DRY but works
 for(var i = 0; i < movies.length; i++){
     var result = "I have ";
     if(movies[i].hasWatched === true){
-        result += "watched \"" + movies[i].title + "\" - " + movies[i].rating + " stars";
-        console.log(result);
+        result += "watched \"";
     } else {
-        result += "not watched \"" + movies[i].title + "\" - " + movies[i].rating + " stars";
-        console.log(result);
+        result += "not watched \"";
     }
+    result += movies[i].title + "\" - " + movies[i].rating + " stars";
+    console.log(result);
 }
